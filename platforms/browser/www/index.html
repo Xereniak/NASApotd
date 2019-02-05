@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Working with F7</title>
+    <title>Nasa Picture of the Day</title>
 
     <!--        FRAMEWORK 7        -->
     <link rel="stylesheet" href="css/framework7.min.css">
@@ -13,34 +13,51 @@
 
 <body>
     <div id="app">
-        <div class="panel panel-left panel-cover">
-            ... panel content goes here ...
-        </div>
-        <div class="panel panel-right panel-cover">
-            ... panel content goes here ...
-        </div>
-        <div class="view view-main color-theme-green">
+        <div class="view view-main color-theme-black">
             <div class="page" data-name="home">
-                <div class="toolbar no-shadow hide-toolbar-on-scroll">
-                    <div class="toolbar-inner">
-                        <a href="/page2/" class="link">Link 1</a>
-                        <a href="#" class="link back">Link 2</a>
-                        <a href="#" class="link">Link 3</a>
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" class="link"><i class="icon icon-back"></i></a>
+                        </div>
+                        <div class="title">
+                            <p>NASA Pic of the Day</p>
+                        </div>
                     </div>
                 </div>
-                <div class="page-content">
 
-                </div>
-                <div class="toolbar tabbar toolbar-bottom-md">
+
+                <div class="toolbar tabbar">
                     <div class="toolbar-inner">
-                        <a href="#tab1" class="tab-link tab-link-active panel-open" data-panel="left">
-                            <i class="icon demo-icon-1">w</i>
-                        </a>
-                        <a href="#tab2" class="tab-link panel-open" data-panel="right">
-                            <i class="icon demo-icon-2">m</i>
-                        </a>
+                        <a href="#tab-1" class="tab-link tab-link-active">Feb. 4th</a>
+                        <a href="#tab-2" class="tab-link">Feb. 3rd</a>
                     </div>
-                </div>
+                    <!-- Tabs -->
+                    <div class="tabs">
+    <!-- First tab, active -->
+    <div class="page-content tab tab-active" id="tab-1">
+        <div class="block">
+            <h4>February 4th Picture of the day</h4>
+            <img src="img/feb4.jpg" alt="february 4th POTD">
+            <p>Henize 70: A Superbubble in the LMC</p>
+            <p>Image Credit &amp; Copyright: Josep M. Drudis</p>
+            <hr>
+            <p>Explanation: Massive stars profoundly affect their galactic environments. Churning and mixing interstellar clouds of gas and dust, stars -- most notably those upwards of tens of times the mass of our Sun -- leave their mark on the compositions and locations of future generations of stars. Dramatic evidence of this is illustrated in our neighboring galaxy, the Large Magellanic Cloud (LMC), by the featured nebula, Henize 70 (also known as N70 and DEM301). Henize 70 is actually a luminous superbubble of interstellar gas about 300 light-years in diameter, blown by winds from hot, massive stars and supernova explosions, with its interior filled with tenuous hot and expanding gas. Because superbubbles can expand through an entire galaxy, they offer humanity a chance to explore the connection between the lifecycles of stars and the evolution of galaxies.</p>
+        </div>
+    </div>
+    <!-- Second tab -->
+    <div class="page-content tab" id="tab-2">
+        <div class="block">
+            <h4>February 3th Picture of the day</h4>
+            <img src="img/feb3.jpg" alt="february 3th POTD">
+            <p>An Airglow Fan from Lake to Sky</p>
+            <p>Image Credit &amp; Copyright: Dave Lane</p>
+            <hr>
+            <p>Explanation: Why would the sky look like a giant fan? Airglow. The featured intermittent green glow appeared to rise from a lake through the arch of our Milky Way Galaxy, as captured during 2015 next to Bryce Canyon in Utah, USA. The unusual pattern was created by atmospheric gravity waves, ripples of alternating air pressure that can grow with height as the air thins, in this case about 90 kilometers up. Unlike auroras powered by collisions with energetic charged particles and seen at high latitudes, airglow is due to chemiluminescence, the production of light in a chemical reaction. More typically seen near the horizon, airglow keeps the night sky from ever being completely dark.</p>
+        </div>
+    </div>
+</div>
+</div> <!-- End of tabs -->
 
             </div>
 
